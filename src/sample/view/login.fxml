@@ -1,8 +1,46 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+<?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.control.Label?>
-<GridPane fx:controller="sample.controller.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #546e7a#546e7a;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.LoginController">
+   <children>
+      <Label alignment="CENTER" layoutX="228.0" layoutY="138.0" prefHeight="51.0" prefWidth="248.0" text="Login" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="loginUsername" focusColor="#a64165" layoutX="174.0" layoutY="223.0" prefHeight="27.0" prefWidth="356.0" promptText="Enter Your Username" unFocusColor="#d08585" />
+      <JFXPasswordField fx:id="loginPassword" focusColor="#a84073" layoutX="171.0" layoutY="271.0" prefHeight="27.0" prefWidth="356.0" promptText="Enter Password" unFocusColor="#d08585">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="loginButton" layoutX="174.0" layoutY="336.0" prefHeight="36.0" prefWidth="356.0" style="-fx-background-color: #819ca9#819ca9;" text="Login">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="76.0" fitWidth="144.0" layoutX="314.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-java-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="37.0" layoutX="126.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-add-user-male-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="47.0" layoutX="123.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-password-64.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
